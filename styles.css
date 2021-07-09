@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap');
 
 body {
+    padding: 0;    
+    margin: 0;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -56,6 +58,7 @@ h1, p {
     padding-bottom: 100px; 
     text-shadow: 1px 4px pink; 
     font-family: 'Baloo Tamma 2', cursive;
+    animation: color-change 2s linear infinite;
 }
 .CTA{
     padding-bottom: 10px; 
@@ -73,3 +76,17 @@ h1, p {
     font-weight: bolder; 
     text-decoration: line-through; 
 }
+
+@keyframes color-change {
+    
+    0%,100%{
+        filter: hue-rotate(0deg);
+        
+    }
+    
+    50%{
+        filter: hue-rotate(360deg);
+
+    }
+}
+
