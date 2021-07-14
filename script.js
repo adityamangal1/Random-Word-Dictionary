@@ -1,4 +1,3 @@
-import {info} from './env.js'; 
 const body = document.querySelector('body'); 
 const button = document.querySelector('button'); 
 const wordContainer = document.querySelector('.word-container'); 
@@ -25,7 +24,7 @@ const randomWord = () => {
 }
 
 const randomDefinition = (word) => {
-    fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=${info.key}`)
+    fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=7e7436ae-9a1a-48e5-a02d-6bfcab41cc8f`)
     .then(response => {
         return response.json(); 
     })
